@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="Savia: recursos educativos digitales para estudiantes de diferentes edades.">
+  <title>Savia – Plataforma de Recursos Educativos</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 56'%3E%3Cpath d='M32 8C28 3 18 4 15 11C8 12 5 20 9 26C4 31 7 41 14 42C16 49 26 51 32 46ZM32 8C36 3 46 4 49 11C56 12 59 20 55 26C60 31 57 41 50 42C48 49 38 51 32 46Z' fill='%23fbbf24' stroke='%234c1d95' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M32 10V45M14 20C19 20 21 24 18 28M17 35C21 34 25 36 26 40M50 20C45 20 43 24 46 28M47 35C43 34 39 36 38 40M23 14C23 18 26 20 29 20M41 14C41 18 38 20 35 20' fill='none' stroke='%234c1d95' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="header__inner">
+      <a class="brand" href="#inicio" aria-label="Savia, ir al inicio">
+        <span class="brand__logo" aria-hidden="true">S</span>
+        <span class="brand__name">Savia</span>
+      </a>
+      <nav aria-label="Principal">
+        <ul class="nav">
+          <li><a class="nav__link" href="#inicio" data-vista="inicio">Inicio</a></li>
+          <li><a class="nav__link" href="#videos" data-vista="videos">Videos</a></li>
+          <li><a class="nav__link" href="#articulos" data-vista="articulos">Artículos</a></li>
+          <li><a class="nav__link" href="#ejercicios" data-vista="ejercicios">Ejercicios</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1"></main>
+
+  <footer class="footer">
+    <p class="footer__dots" aria-hidden="true"><span></span><span></span><span></span><span></span></p>
+    <p class="footer__name">Savia · Plataforma de Recursos Educativos</p>
+    <p>Videos, artículos y ejercicios para aprender a tu ritmo · Proyecto II · Sprint 1</p>
+  </footer>
+
+  <noscript><p class="container">Savia necesita JavaScript para mostrar los recursos.</p></noscript>
+
+  <!-- VIDEOS DE YOUTUBE: aquí está el código <iframe> de cada video (el de YouTube > Compartir > Insertar).
+       Para cambiar un video, cambia el link que está dentro de src="...". El id debe coincidir con el de js/data.js. -->
+  <template id="video-fracciones">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/37DTLwh8sUc?si=dSZXZeX6G8s7VlFu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </template>
+  <template id="video-ciclo-del-agua">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zcBnm681O5Q?si=zYBexGuEYhRowvPq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </template>
+  <template id="video-sustantivo">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/p0eyWoajuP8?si=i40NYk-aJytjJKtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </template>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

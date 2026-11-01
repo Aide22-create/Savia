@@ -1,0 +1,2 @@
+Coloca aquí tu imagen de portada con este nombre exacto:  aprendizaje.jpg
+Aparecerá en la página de inicio, junto al título. Si el archivo no está, el inicio se ve igual, sin imagen.
